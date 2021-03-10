@@ -14,6 +14,10 @@ class Player
     @lives -= 1
   end
 
+  def alive?
+    @lives != 0
+  end
+
     # player dies when no lives are left
   def dead?
     @lives = 0
